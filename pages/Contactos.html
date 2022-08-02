@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../assets/icons/icon_favicon_page.png" type="image/x-icon">
+    <title>Diario-Del-Mundo-Contactos</title>
+</head>
+<body>
+    <nav class="nav__flex">
+        <div class="logo">   
+            <a href="../index.html">
+                <img src="../assets/icons/mundo_png.png" alt="logo_superior" width="150px">
+            </a>
+        </div>
+        <!--Link a mis paginas-->
+        <ul class="nav__list">
+       <!--Enlaces reativos-->            
+            <li class="nav__links"><a href="../index.html">Inicio</a></li>
+            <li class="nav__links"><a href="./Actualidad.html">Actualidad</a></li>
+            <li class="nav__links"><a href="./Deportes.html">Deportes</a></li>
+            <li class="nav__links"><a href="./Curiosidades.html">Curiosidades</a></li>
+            <li class="nav__links"><a href="#">Contactos</a></li>     
+        </ul>
+    </nav>
+    <!--Formulario de Contactos-->
+<form action="procesar.php" name="Contactos" method="post">
+    <fieldset>
+        <legend>Coctactanos</legend>
+            <p>
+                <label>Nombre:
+                    <input type="text" name="nombre" placeholder="Juan" required>
+                </label>
+            </p>
+            <p>
+                <label>Apellido:
+                     <input type="text" name="apellido" placeholder="Gomez" required>
+                </label>
+            </p>
+            <p>
+                <label>Email:
+                    <input type="email" name="email" placeholder="juangomez@servidor.com" required>
+                </label>
+            </p>
+            <p>
+                <label>Contraseña:
+                    <input type="password" name="contraseña">
+                </label>
+            </p>
+         
+        <!--Radio-->
+            <h4>Sexo</h4>
+            <label for="sexo">Mujer</label>
+            <input type="radio" name="sexo" value="mujer">
+            <label for="sexo">Hombre</label>
+            <input type="radio" name="sexo" value="hombre">
+            <label for="sexo">Otro</label>
+            <input type="radio" name="sexo" value="otro">
+        
+        <!--Checkbox-->
+            <h4>Motivo</h4>
+            <p>
+                <label for="Motivo">Consulta</label>
+                <input type="checkbox" name="Motivo" value="Consulta">
+            </p>
+            <p>
+                <label for="Motivo">Reclamo</label>
+                <input type="checkbox" name="Motivo" value="Reclamo">
+            </p>
+            <p>
+                <label for="Motivo">Sugerencia</label>
+                <input type="checkbox" name="Motivo" value="Sugerencia">
+            </p>
+
+        <!--Menu Despleglable-->
+            <h4>Pais</h4>
+            <select name="Pais">
+                <option value="argentina">Argentina</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="uruguay">Uruguay</option>
+            </select>
+
+            <h4>Ciudad</h4>
+            <select name="Ciudad">
+                <option value="buenosaires">Buenos Aires</option>
+                <option value="caracas">Caracas</option>
+                <option value="montevideo">Montevideo</option>
+            </select>
+        <!--Comentario-->
+        <h4>Comentario</h4>
+        <textarea name="Comentario" id="" cols="30" rows="10">
+            
+        </textarea>
+        
+        <!--Botones-->
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+        <p>
+            <button type="reset">Borrar Fromulario</button>   
+        </p>
+        <p>
+            <button type="button">Sin Acciones</button>  
+        </p>
+        
+    </fieldset>
+</form>
+ <footer id="footer">
+    <article>
+        <h4>Desarrollado por Henry Pitre 2022</h4>
+    </article>
+
+    <article class="redessociales">
+        <!--Iconos de redes-->
+        <!--Iconos de redes-->
+        <!--Iconos de redes-->
+    </article>
+ </footer>
+</body>
+
+</html>
