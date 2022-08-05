@@ -43,6 +43,14 @@ article p{
 .nav__list .nav__links{
     padding: 0 15px;
 }
+.navbar{
+    background-color: #fffcec;
+    border: solid;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:rgb(78 135 135 / 71%);
+    
+}
 
 .formulario{
     color: white;
@@ -254,12 +262,15 @@ h2 {
 }
 
 #footer{
+    display: flex;
     width: 100%;
     color: black;
     padding: 20px 20px;
     background-image: url('../assets/backgrounds/footer_pergamino.jpg');
     background-size: cover;
     background-position: center;
+justify-content: space-between;
+    align-items: baseline;
 }
 
 #footer article h4{
@@ -268,6 +279,24 @@ h2 {
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;  
+}
+
+.bi{
+    padding: 20px;
+   
+}
+
+.redessociales{
+    display: flex;
+    list-style-type: none;
+    align-items: baseline;
+    
+    
+
+    font-size: 30px;
+    color: ;
+    
+    
 }
 
 ul{
