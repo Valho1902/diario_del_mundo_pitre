@@ -1,0 +1,56 @@
+/*Media Queries*/
+
+@media only screen and (max-width:576px){
+    /*Estilos Generales*/
+    .nav__flex{
+        flex-direction: column;    
+    }
+
+    .logo__principal{
+        width: 500px;
+    }
+
+    .logo__paginas{
+        width: 500px;
+        height: 350;
+    }
+
+    .video__noticia{
+        width: 450px;
+        height: 300px;
+        margin-top: 35px;
+        }
+
+    .tabla{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid__container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:
+        "video"
+        "noticia1"
+        "noticia2"
+        "noticia3"
+        "noticia4";
+        gap: 5px;
+
+        align-items: baseline;
+
+
+
+    }
+        
+}
+
+
