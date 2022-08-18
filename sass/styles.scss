@@ -9,6 +9,17 @@ $colorDetalles: rgba(78, 135, 135, 0.918);
 
 @import "mediaQueries.scss";
 
+$estilos:(
+    color: #fffcec,
+    centro: center, 
+    tFuente: 20px,
+);
+
+@mixin sizesImg($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
 /*Selector Universal*/
 *{
     margin: 0;
@@ -16,18 +27,19 @@ $colorDetalles: rgba(78, 135, 135, 0.918);
     box-sizing: border-box;
 }
 
+
 /*Medidas relativas*/
 /*Porcentaje*/
 html{
     font-size: 120%;
-    background-color: rgba(244, 238, 229, 0.977);
-    height: 100%;
+    background-color: 
+    height 100%;
 }
 
 article{
     
     p{
-    font-size: 20px;
+    font-size: map-get($estilos, tFuente );
     font-family: "poppins", sans-serif;
     text-align: justify;
     padding: 30px 50px;
@@ -51,12 +63,19 @@ article{
     padding: 0 15px;
 }
 .navbar{
-    background-color: #fffcec;
+    background-color:map-get($estilos, color);
     border: solid; color:rgba(78, 135, 135, 0.918);
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light{
     color:$colorDetalles;
     
+}
+
+.navbar-nav{
+    @extend .navbar-light;
+} 
+.nav-link{
+    @extend .navbar-light;
 }
 
 
@@ -121,8 +140,7 @@ h2 {
 
 .video__noticia{
    border-radius: 20px;
-   width: 700px;
-   height: 500px;
+   @include sizesImg(700px, 500px);
    margin-top: 50px;
 
    animation-name: pulse;

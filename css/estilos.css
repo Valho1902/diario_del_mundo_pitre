@@ -32,11 +32,7 @@
   .grid__container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "video"
- "noticia1"
- "noticia2"
- "noticia3"
- "noticia4";
+    grid-template-areas: "video" "noticia1" "noticia2" "noticia3" "noticia4";
     gap: 5px;
     align-items: baseline; } }
 
@@ -50,8 +46,7 @@
 /*Porcentaje*/
 html {
   font-size: 120%;
-  background-color: rgba(244, 238, 229, 0.977);
-  height: 100%; }
+  background-color: height 100%; }
 
 article p {
   font-size: 20px;
@@ -75,7 +70,7 @@ article p {
   border: solid;
   color: rgba(78, 135, 135, 0.918); }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light, .navbar-nav, .nav-link {
   color: rgba(78, 135, 135, 0.918); }
 
 .formulario {
@@ -224,8 +219,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "video video noticia1"
- "noticia2 noticia3 noticia4";
+  grid-template-areas: "video video noticia1" "noticia2 noticia3 noticia4";
   gap: 30px;
   justify-items: center;
   align-items: center; }
@@ -278,60 +272,3 @@ ul {
 
 nav ul li a {
   text-decoration: none; }
-
-  /*Media Queries*/
-
-@media only screen and (max-width:576px){
-  /*Estilos Generales*/
-  .nav__flex{
-      flex-direction: column;    
-  }
-
-  .logo__principal{
-      width: 500px;
-  }
-
-  .logo__paginas{
-      width: 500px;
-      height: 350;
-  }
-
-  .video__noticia{
-      width: 450px;
-      height: 300px;
-      margin-top: 35px;
-      }
-
-  .tabla{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .video{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .grid__container{
-      grid-template-columns: repeat(1,1fr);
-      grid-template-rows: repeat(5,1fr);
-      grid-template-areas:
-      "video"
-      "noticia1"
-      "noticia2"
-      "noticia3"
-      "noticia4";
-      gap: 5px;
-
-      align-items: baseline;
-
-
-
-  }
-      
-}
-
-
