@@ -1,13 +1,12 @@
-$colorDetalles: rgba(78, 135, 135, 0.918);
 /*Font-Family*/
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @font-face {
     font-family: "poppins";
-    src: url("../assets/fonts/Poppins-SemiBold.ttf");
-}
+    src: url("../assets/fonts/Poppins-SemiBold.ttf");}
 
-@import "mediaQueries.scss";
+
+$colorDetalles: rgba(78, 135, 135, 0.918);
 
 $estilos:(
     color: #fffcec,
@@ -26,7 +25,6 @@ $estilos:(
     padding: 0;
     box-sizing: border-box;
 }
-
 
 /*Medidas relativas*/
 /*Porcentaje*/
@@ -193,6 +191,7 @@ h2 {
     font-size: 25px;
     font-weight: 150;
     letter-spacing: 0.5px;
+    
 }
 
 .noticia__miniatura{
@@ -345,3 +344,5 @@ ul{
 nav ul li a{
     text-decoration: none;
 }
+
+@import "mediaQueries";
